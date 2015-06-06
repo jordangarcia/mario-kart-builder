@@ -1,0 +1,172 @@
+<style>
+.kart-component {
+  width: 400px;
+  border: 1px;
+}
+
+.kart-component th, .kart-component td {
+font-size: 10px;
+padding: 5px;
+}
+</style>
+
+<div class="kart-builder">
+  <div>
+    <h3>Kart</h3>
+    <table class="kart-component">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Speed - Ground</th>
+          <th>Speed - Water</th>
+          <th>Speed - Air</th>
+          <th>Speed - Anti-Gravity</th>
+          <th>Acceleration</th>
+          <th>Weight</th>
+          <th>Handling - Ground</th>
+          <th>Handling - Water</th>
+          <th>Handling - Air</th>
+          <th>Handling - Anti-Gravity</th>
+          <th>Traction</th>
+          <th>Mini-Turbo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-repeat="component: karts" v-on="click: selectComponent('kart', component)">
+          <td>{{ component["Name"] }}</td>
+          <td>{{ component["Speed - Ground"] }}</td>
+          <td>{{ component["Speed - Water"] }}</td>
+          <td>{{ component["Speed - Air"] }}</td>
+          <td>{{ component["Speed - Anti-Gravity"] }}</td>
+          <td>{{ component["Acceleration"] }}</td>
+          <td>{{ component["Weight"] }}</td>
+          <td>{{ component["Handling - Ground"] }}</td>
+          <td>{{ component["Handling - Water"] }}</td>
+          <td>{{ component["Handling - Air"] }}</td>
+          <td>{{ component["Handling - Anti-Gravity"] }}</td>
+          <td>{{ component["Traction"] }}</td>
+          <td>{{ component["Mini-Turbo"] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>Wheels</h3>
+    <table class="kart-component">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Speed - Ground</th>
+          <th>Speed - Water</th>
+          <th>Speed - Air</th>
+          <th>Speed - Anti-Gravity</th>
+          <th>Acceleration</th>
+          <th>Weight</th>
+          <th>Handling - Ground</th>
+          <th>Handling - Water</th>
+          <th>Handling - Air</th>
+          <th>Handling - Anti-Gravity</th>
+          <th>Traction</th>
+          <th>Mini-Turbo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-repeat="component: wheels" v-on="click: selectComponent('wheels', component)">
+          <td>{{ component["Name"] }}</td>
+          <td>{{ component["Speed - Ground"] }}</td>
+          <td>{{ component["Speed - Water"] }}</td>
+          <td>{{ component["Speed - Air"] }}</td>
+          <td>{{ component["Speed - Anti-Gravity"] }}</td>
+          <td>{{ component["Acceleration"] }}</td>
+          <td>{{ component["Weight"] }}</td>
+          <td>{{ component["Handling - Ground"] }}</td>
+          <td>{{ component["Handling - Water"] }}</td>
+          <td>{{ component["Handling - Air"] }}</td>
+          <td>{{ component["Handling - Anti-Gravity"] }}</td>
+          <td>{{ component["Traction"] }}</td>
+          <td>{{ component["Mini-Turbo"] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h3>Glider</h3>
+    <table class="kart-component">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Speed - Ground</th>
+          <th>Speed - Water</th>
+          <th>Speed - Air</th>
+          <th>Speed - Anti-Gravity</th>
+          <th>Acceleration</th>
+          <th>Weight</th>
+          <th>Handling - Ground</th>
+          <th>Handling - Water</th>
+          <th>Handling - Air</th>
+          <th>Handling - Anti-Gravity</th>
+          <th>Traction</th>
+          <th>Mini-Turbo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-repeat="component: gliders" v-on="click: selectComponent('glider', component)">
+          <td>{{ component["Name"] }}</td>
+          <td>{{ component["Speed - Ground"] }}</td>
+          <td>{{ component["Speed - Water"] }}</td>
+          <td>{{ component["Speed - Air"] }}</td>
+          <td>{{ component["Speed - Anti-Gravity"] }}</td>
+          <td>{{ component["Acceleration"] }}</td>
+          <td>{{ component["Weight"] }}</td>
+          <td>{{ component["Handling - Ground"] }}</td>
+          <td>{{ component["Handling - Water"] }}</td>
+          <td>{{ component["Handling - Air"] }}</td>
+          <td>{{ component["Handling - Anti-Gravity"] }}</td>
+          <td>{{ component["Traction"] }}</td>
+          <td>{{ component["Mini-Turbo"] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  <div>
+    <h3>Totals</h3>
+    <table class="kart-component">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Speed - Ground</th>
+          <th>Speed - Water</th>
+          <th>Speed - Air</th>
+          <th>Speed - Anti-Gravity</th>
+          <th>Acceleration</th>
+          <th>Weight</th>
+          <th>Handling - Ground</th>
+          <th>Handling - Water</th>
+          <th>Handling - Air</th>
+          <th>Handling - Anti-Gravity</th>
+          <th>Traction</th>
+          <th>Mini-Turbo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-repeat="component: currentKart">
+          <td>{{ component["Name"] }}</td>
+          <td>{{ component["Speed - Ground"] }}</td>
+          <td>{{ component["Speed - Water"] }}</td>
+          <td>{{ component["Speed - Air"] }}</td>
+          <td>{{ component["Speed - Anti-Gravity"] }}</td>
+          <td>{{ component["Acceleration"] }}</td>
+          <td>{{ component["Weight"] }}</td>
+          <td>{{ component["Handling - Ground"] }}</td>
+          <td>{{ component["Handling - Water"] }}</td>
+          <td>{{ component["Handling - Air"] }}</td>
+          <td>{{ component["Handling - Anti-Gravity"] }}</td>
+          <td>{{ component["Traction"] }}</td>
+          <td>{{ component["Mini-Turbo"] }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</div>

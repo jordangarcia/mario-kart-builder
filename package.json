@@ -1,0 +1,40 @@
+{
+  "name": "mario-kart-builder",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordangarica/mario-kart-builder"
+  },
+  "author": "Jordan Garcia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordangarica/mario-kart-builder/issues"
+  },
+  "homepage": "https://github.com/jordangarica/mario-kart-builder",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "grunt": "^0.4.5",
+    "webpack-dev-server": "^1.9.0",
+    "grunt-webpack": "^1.0.8",
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.10",
+    "babel-core": "^5.5.4",
+    "babel-loader": "^5.1.4",
+    "vue": "^0.12.0-rc2",
+    "keymirror": "^0.1.1",
+    "nuclear-js": "^1.0.5",
+    "html-loader": "^0.3.0",
+    "json-loader": "^0.5.2"
+  },
+  "devDependencies": {
+    "load-grunt-config": "^0.17.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "csvtojson": "^0.3.21"
+  }
+}
